@@ -6,6 +6,9 @@ html{
 }
 
 body{
+    background-image: url(img/body.jpg);
+    background-size: cover;
+    background-origin: 0;
     margin: 0;
     background-color:#EFF5F5; 
 }
@@ -35,14 +38,17 @@ h1{
 }
 
 .menu__list{
-    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    font-size: 14px;
 }
 
 
 .menu__list__item{
     list-style-type: none;
-    margin-top: 0.2rem;
-    padding-bottom: 1rem;
+    padding: 0.8rem;
 }
 
 a{
@@ -53,6 +59,7 @@ a{
 a:hover{
     cursor: pointer;
     color:#EFF5F5;
+    transition-duration: 1s;
 }
 
 .container{
@@ -62,22 +69,85 @@ a:hover{
 
 h3{
     text-decoration: underline;
-    color:#00425A;
+    font-weight: bold;
+    color:#1F8A70;
+    text-indent: 2rem;
+    text-align: center;
 }
 
 p{
-    font-family: 'Belanosima';
+    font-family: 'Belanosima', sans-serif;
     font-weight: bold;
-    font-style: wavy;
+    color: #EFF5F5;
     line-height: 2rem;
+    text-indent: 1rem;
+    text-align: center;
 }
 
+.container-news{
+    display:flex;
+    align-items: start;
+    padding-bottom: 0;
+}
 
-footer{
+.news-1, .news-2{
+    border: solid 3px #EFF5F5;
+    background: radial-gradient(circle, rgba(31,138,112,1) 0%, rgba(0,66,90,1) 72%);
+    border-radius: 2rem;
+    color: #EFF5F5;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+    margin-top: 0.5rem;
+}
+
+.footer{
     background-color: #181823;
     height: 10rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.container-flex{
+.footer__social-media__items img{
+    width: 2rem;
+    height: auto;
+    padding: 0.2rem;
+}
+
+.footer__social-media__items{
     display: flex;
+    flex-direction: column;
+}
+
+.footer__social-media__items:hover{
+    cursor: pointer;
+}
+
+h4{
+    margin: 0;
+    color: #EFF5F5;
+}
+
+.contact{
+    color: #EFF5F5;
+}
+
+.contact__list{
+    list-style-type: none;
+    padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    html{
+        font-size: 1.5rem;
+    }
+    img{
+        width: 60%;
+    }
+    .news-1, .news-2{
+        text-align: center;
+    }
 }

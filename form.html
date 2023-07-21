@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aquí encontrarás información sobre el instituto de educación primaria UntrefSchool">
+    <meta name="author" content="Noelia Villalba">
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Contactanos</title>
+</head>
+<body>
+    <h1>Formulario de contacto Untref School</h1>
+    <form class="contact-form" action="https://formsubmit.co/noe.aylen00@gmail.com" method="POST">
+      <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="Nombre sólo acepta letras y espacios en blanco" required>
+      <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+        title="Formato de correo inválido" required>
+      <textarea name="comentarios" placeholder="Escribe tus comentarios" cols="30" rows="10" required></textarea>
+      <input type="submit">
+    </form>
+</body>
+</html>
