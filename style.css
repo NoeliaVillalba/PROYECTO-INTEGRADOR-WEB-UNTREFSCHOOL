@@ -13,7 +13,6 @@ body{
 header{
     background-color:#1F8A70;
     margin-top: 0;
-    background: radial-gradient(circle, rgba(31,138,112,1) 44%, rgba(0,66,90,1) 94%);
 }
 
 
@@ -59,12 +58,14 @@ h1{
 a{
     text-decoration: none;
     color: #181823;
+    transition-property: font-size, color;
+    transition-duration: 1s;
 }
 
 a:hover{
     cursor: pointer;
     color:#EFF5F5;
-    transition-duration: 1s;
+    font-size: 1.1rem;
 }
 
 .container{
@@ -160,10 +161,14 @@ img{
 .footer__social-media__items{
     display: flex;
     flex-direction: column;
+    transition-property: transform;
+    transition-duration: 1s;
 }
 
-.footer__social-media__items:hover{
+.footer__social-media__items img:hover{
     cursor: pointer;
+    transform: scale(1.5);
+    transition-duration: 1s;
 }
 
 h4{
