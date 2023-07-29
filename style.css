@@ -13,13 +13,16 @@ body{
 header{
     background-color:#1F8A70;
     margin-top: 0;
+    padding-top: 0.7rem;
 }
 
 
 h1{
     display: inline-block;
-    font-family: 'Belanosima';
-    padding-right: 0.5rem;
+    text-align: center;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 1rem;
+    padding-right: 0;
     margin-top: 1rem;
     margin-left: 0.3rem;
     font-style: oblique;
@@ -33,10 +36,14 @@ h1{
 }
 
 .logo{
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    height: 3.5rem;
+    max-width: 17rem;
     background-color:#EFF5F5;
-    border-radius: 80rem;
-    margin-top: 0.5rem;
+    border-radius: 60rem
 }
 
 .menu__list{
@@ -49,16 +56,16 @@ h1{
 
 
 .menu__list__item{
+    font-size: 0.8rem;
     list-style-type: none;
-    padding: 0.8rem;
-    color: #EFF5F5;
+    padding: 0.6rem;
     font-weight: bold;
 }
 
 a{
     text-decoration: none;
     color: #181823;
-    transition-property: font-size, color;
+    transition-property: font-size;
     transition-duration: 1s;
 }
 
@@ -189,7 +196,13 @@ h4{
 
 @media  screen and (max-width:386px) {
     html{
-        font-size: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .menu__list__item{
+        font-size: 0.6rem;
+    }
+    h1{
+        font-size: 1rem;
     }
 }
 
@@ -202,6 +215,9 @@ h4{
     }
     .contact__list{
         font-size: 0.8rem;
+    }
+    h1{
+        font-size: 1.5rem;
     }
 }
 
