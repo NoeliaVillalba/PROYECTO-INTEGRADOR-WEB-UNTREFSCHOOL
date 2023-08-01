@@ -56,7 +56,8 @@ h1{
 
 
 .menu__list__item{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    font-weight: bold;
     list-style-type: none;
     padding: 0.6rem;
     font-weight: bold;
@@ -168,6 +169,7 @@ img{
 .footer__social-media__items{
     display: flex;
     flex-direction: column;
+    align-items: center;
     transition-property: transform;
     transition-duration: 1s;
 }
@@ -182,6 +184,7 @@ h4{
     font-size: 0.7rem;
     margin: 0;
     color: #EFF5F5;
+    padding-left: 0.5rem;
 }
 
 .contact{
@@ -189,9 +192,16 @@ h4{
 }
 
 .contact__list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: 0.6rem;
     list-style-type: none;
     padding: 0;
+}
+
+.tittle-contact{
+    padding-right: 5rem;
 }
 
 @media  screen and (max-width:386px) {
@@ -224,6 +234,9 @@ h4{
 @media screen and (min-width: 1024px) {
     html{
         font-size: 1.2rem;
+    }
+    .menu__list__item{
+        font-size: 0.7rem;
     }
     img{
         width: 60%;
